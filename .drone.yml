@@ -1,0 +1,8 @@
+kind: pipeline
+name: equity
+
+steps:
+- name: build
+  image: maven
+  commands:
+  - mvn clean install
