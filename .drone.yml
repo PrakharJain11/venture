@@ -8,7 +8,7 @@ steps:
   - mvn clean install
   
 - name: docker  
-  image: plugins/docker
+  image: plugins/docker:17.05
   settings:
     repo: PrakharJain11/venture
     username:
