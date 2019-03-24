@@ -6,3 +6,12 @@ steps:
   image: maven
   commands:
   - mvn clean install
+  
+- name: docker  
+  image: plugins/docker
+  settings:
+    repo: PrakharJain11/venture
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
